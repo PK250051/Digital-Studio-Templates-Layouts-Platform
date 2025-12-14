@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DSTLP – Digital Studio Templates & Layouts Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="font-family:Arial; text-align:center; margin-top:80px;">
+
+  <h1>DSTLP</h1>
+  <h2>Digital Studio Templates & Layouts Platform</h2>
+
+  <p>Ready-made Excel & Word Templates</p>
+  <p><strong>Website launching soon</strong></p>
+
+  <p>Domain: dstlp.com</p>
+
+</body>
+</html>
+Scroll down → Commit new file
+
+STEP 2 — CREATE CNAME FILE (CRITICAL)
+Click Add file → Create new file
+
+File name:
+
+objectivec
+Copy code
+CNAME
+File content:
+
+Copy code
+dstlp.com
+Commit new file
+
+⚠️ No .txt, no extra spaces.
+
+STEP 3 — ENABLE GITHUB PAGES
+Click Settings (top menu)
+
+Click Pages (left sidebar)
+
+Under Source:
+
+Branch: main
+
+Folder: /root
+
+Click Save
+
+You will see a message like:
+
+csharp
+Copy code
+Your site is published at https://pk250051.github.io/Digital-Studio-Templates-Layouts-Platform/
+👉 Open this link and confirm it loads.
+
+STEP 4 — CONNECT GoDaddy DOMAIN (dstlp.com)
+In GoDaddy → DNS Settings
+Add 4 A Records
+Type	Host	Points to
+A	@	185.199.108.153
+A	@	185.199.109.153
+A	@	185.199.110.153
+A	@	185.199.111.153
+
+Add 1 CNAME
+Type	Host	Points to
+CNAME	www	pk250051.github.io
+
+Save changes.
+
+STEP 5 — VERIFY DOMAIN IN GITHUB
+GitHub → Settings → Pages
+
+Custom domain:
+
+Copy code
+dstlp.com
+Save
+
+Enable Enforce HTTPS
+
+DNS may take 10 minutes to 24 hours.
+
+RESULT AFTER THIS STEP ✔
+https://dstlp.com opens
+
+Simple launch page visible
+
+GitHub fully connected
+
+Safe base for future work
+
+DO NOT DO YET ❌
+Do not upload Excel / Word files
+
+Do not design full website
+
+Do not add payments
+
+NEXT CONFIRMATION REQUIRED
+Reply with ONE LINE ONLY:
+
+YES – dstlp.com is opening
+
+After that, I will:
+
+Create Excel & Word template folder system
+
+Design template download pages
+
+Prepare ZIP-based template uploads
+
+Make it professional step by step
+
+We are proceeding correctly.
+
+
+
+
+
+
+
