@@ -20,24 +20,33 @@
 
     /* ===== HEADER WITH SLIDER ===== */
     .header {
-      position: relative;
-      height: 75vh;
-      min-height: 480px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      overflow: hidden;
-    }
+  position: relative;
+  height: 420px;              /* SMALL HEADER */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
 
-    .header::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: rgba(15, 23, 42, 0.85);
-      z-index: 1;
-    }
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;     /* FULL IMAGE, NO TILING */
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(15, 23, 42, 0.65),
+    rgba(15, 23, 42, 0.35)
+  );                           /* LIGHT, REALISTIC OVERLAY */
+  z-index: 1;
+}
+
 
     .header-content {
       position: relative;
@@ -143,7 +152,7 @@
         Digital Studio Templates & Layouts Platform<br>
         Ready-made Excel & Word templates for resumes, dashboards and business use
       </p>
-      <a href="#" class="btn-primary">Browse Templates</a>
+    <a href="templates.html" class="btn-primary">Browse Templates</a>
     </div>
   </header>
 
@@ -185,8 +194,12 @@
 
   <!-- FOOTER -->
   <footer>
-    © 2025 DSTLP.com — Digital Studio Templates & Layouts Platform
-  </footer>
+  © 2025 DSTLP.com — Digital Studio Templates & Layouts Platform <br>
+  Contact Support: 
+  <a href="mailto:Support@dstlp.com" style="color:#93c5fd;">
+    Support@dstlp.com
+  </a>
+</footer>
 
   <!-- BACKGROUND IMAGE SLIDER -->
   <script>
