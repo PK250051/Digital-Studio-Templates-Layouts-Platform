@@ -43,18 +43,29 @@
       padding-bottom: 3px;
     }
 
-    /* ===== HEADER ===== */
-    .header {
+    /* ===== PAGE HEADER ===== */
+    .page-header {
       background: #1e293b;
       color: white;
-      padding: 50px 20px;
+      padding: 60px 20px;
       text-align: center;
     }
 
     .container {
-      max-width: 1200px;
+      max-width: 1300px;
       margin: auto;
-      padding: 50px 20px;
+      padding: 60px 20px;
+    }
+
+    /* ===== SECTION HEADERS ===== */
+    .section-title {
+      font-size: 26px;
+      margin-bottom: 10px;
+    }
+
+    .section-desc {
+      color: #4b5563;
+      margin-bottom: 30px;
     }
 
     /* ===== GRID ===== */
@@ -62,6 +73,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 25px;
+      margin-bottom: 80px;
     }
 
     .card {
@@ -92,12 +104,12 @@
     }
 
     .download-box a {
-      display: inline-block;
       background: #2563eb;
       color: white;
       padding: 10px 20px;
       border-radius: 6px;
       font-size: 14px;
+      display: inline-block;
     }
 
     .download-box a:hover {
@@ -108,8 +120,7 @@
       background: #0f172a;
       color: #cbd5f5;
       text-align: center;
-      padding: 20px;
-      margin-top: 60px;
+      padding: 25px;
       font-size: 14px;
     }
 
@@ -136,139 +147,103 @@
 </div>
 
 <!-- HEADER -->
-<div class="header">
-  <h1>Download Professional Templates</h1>
-  <p>Ready-made Excel & Word templates for business and professional use</p>
+<div class="page-header">
+  <h1>Professional Templates Library</h1>
+  <p>Resume, Excel, PowerPoint & Power BI templates for business and professionals</p>
 </div>
 
-<!-- CONTENT -->
 <div class="container">
-  <div class="grid">
 
-    <!-- TEMPLATE 1 -->
-    <div class="card">
-      <h3>Modern Professional Resume</h3>
-      <p>
-        A clean and modern resume template designed for professionals across industries.
-        This template highlights skills, experience, and achievements clearly.
-        Suitable for job applications, career transitions, and corporate roles.
-        Easy to edit and fully ATS-friendly.
-      </p>
-      <div class="download-box">
-        <a href="downloads/resume-template-modern.zip" download>Download</a>
-      </div>
+<!-- ================= RESUME ================= -->
+<h2 class="section-title">Resume Templates (12)</h2>
+<p class="section-desc">
+Professionally designed resume templates suitable for freshers, experienced professionals,
+IT roles, management positions, and executive leadership profiles.
+</p>
+
+<div class="grid">
+  <!-- Repeat structure -->
+  <div class="card">
+    <h3>Modern Professional Resume</h3>
+    <p>
+      Clean and modern resume format designed for corporate and professional roles.
+      Highlights skills, experience, and achievements clearly.
+      ATS-friendly and easy to edit in Word.
+    </p>
+    <div class="download-box">
+      <a href="downloads/resume-modern.zip" download>Download</a>
     </div>
-
-    <div class="card">
-      <h3>Executive Resume Template</h3>
-      <p>
-        Designed for senior-level professionals and executives.
-        Emphasizes leadership experience, strategic roles, and accomplishments.
-        Ideal for management, director, and CXO positions.
-        Professional formatting with clear hierarchy.
-      </p>
-      <div class="download-box">
-        <a href="downloads/resume-template-executive.zip" download>Download</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3>Fresher Resume Template</h3>
-      <p>
-        Perfect for fresh graduates and entry-level candidates.
-        Focuses on education, skills, internships, and projects.
-        Simple structure to present information clearly.
-        Ideal for campus placements and first jobs.
-      </p>
-      <div class="download-box">
-        <a href="downloads/resume-template-fresher.zip" download>Download</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3>IT Professional Resume</h3>
-      <p>
-        Tailored for IT, software, and technical professionals.
-        Includes sections for skills, tools, certifications, and projects.
-        Suitable for developers, engineers, and analysts.
-        Clear layout for technical recruiters.
-      </p>
-      <div class="download-box">
-        <a href="downloads/resume-template-it.zip" download>Download</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3>Monthly Budget Planner</h3>
-      <p>
-        Excel template to plan and control monthly income and expenses.
-        Automatically calculates totals and balances.
-        Ideal for personal finance and household budgeting.
-        Simple and easy-to-use format.
-      </p>
-      <div class="download-box">
-        <a href="downloads/excel-budget-planner.zip" download>Download</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3>Personal Expense Tracker</h3>
-      <p>
-        Track daily expenses with categorized entries.
-        Helps identify spending patterns and savings opportunities.
-        Suitable for individuals and families.
-        Clear reporting and summary sections.
-      </p>
-      <div class="download-box">
-        <a href="downloads/excel-expense-tracker-personal.zip" download>Download</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3>Business Expense Tracker</h3>
-      <p>
-        Designed for small businesses and freelancers.
-        Tracks operational expenses and cost categories.
-        Helps maintain financial discipline and reporting.
-        Professional business-ready layout.
-      </p>
-      <div class="download-box">
-        <a href="downloads/excel-expense-tracker-business.zip" download>Download</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3>Profit & Loss Statement</h3>
-      <p>
-        Excel-based P&L statement for business performance analysis.
-        Calculates revenue, costs, and net profit automatically.
-        Suitable for monthly and yearly reporting.
-        Clean financial presentation format.
-      </p>
-      <div class="download-box">
-        <a href="downloads/excel-profit-loss.zip" download>Download</a>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3>Attendance Tracker</h3>
-      <p>
-        Employee attendance tracking template.
-        Records daily attendance, leaves, and working days.
-        Useful for HR and small organizations.
-        Easy customization and reporting.
-      </p>
-      <div class="download-box">
-        <a href="downloads/excel-attendance-tracker.zip" download>Download</a>
-      </div>
-    </div>
-
-    <!-- Add remaining templates similarly (up to 20) -->
-
   </div>
+
+  <div class="card"><h3>Executive Resume</h3><p>Designed for senior leadership roles with emphasis on achievements, strategy and management experience.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Fresher Resume</h3><p>Ideal for students and entry-level professionals focusing on education and skills.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>IT Professional Resume</h3><p>Optimized for IT and technical roles with skills and project sections.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Manager Resume</h3><p>Structured for management roles highlighting leadership and team handling.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Creative Resume</h3><p>Visually appealing resume for creative professionals.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Simple Resume</h3><p>Minimal and clean layout suitable for any job profile.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Finance Resume</h3><p>Focused on accounting, finance, and analytical roles.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>HR Resume</h3><p>Tailored for human resource professionals.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Sales Resume</h3><p>Highlights targets, achievements, and sales metrics.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Marketing Resume</h3><p>Designed for marketing and branding professionals.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Technical Lead Resume</h3><p>For senior engineers and technical leadership roles.</p><div class="download-box"><a href="#">Download</a></div></div>
 </div>
 
-<!-- FOOTER -->
+<!-- ================= EXCEL ================= -->
+<h2 class="section-title">Excel Templates (12)</h2>
+<p class="section-desc">
+Excel templates designed for finance, HR, operations, analytics, and business tracking.
+Automated calculations and structured layouts included.
+</p>
+
+<div class="grid">
+  <div class="card"><h3>Monthly Budget Planner</h3><p>Plan and track monthly income and expenses efficiently.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Expense Tracker</h3><p>Track daily and monthly expenses with categories.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Business Expense Sheet</h3><p>Professional expense tracking for businesses.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Profit & Loss Statement</h3><p>Calculate revenue, cost, and net profit.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Invoice Generator</h3><p>Create professional invoices automatically.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Salary Sheet</h3><p>Employee salary and payroll management.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Attendance Tracker</h3><p>Track employee attendance and leaves.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Inventory Management</h3><p>Stock tracking and inventory control.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Project Tracker</h3><p>Monitor project tasks and timelines.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Sales Tracker</h3><p>Track sales performance and targets.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Cash Flow Statement</h3><p>Manage inflow and outflow of cash.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>KPI Dashboard</h3><p>Business performance dashboard.</p><div class="download-box"><a href="#">Download</a></div></div>
+</div>
+
+<!-- ================= PPT ================= -->
+<h2 class="section-title">PowerPoint Templates (6)</h2>
+<p class="section-desc">
+Professional presentation templates suitable for corporate meetings,
+business proposals, training sessions, and executive presentations.
+</p>
+
+<div class="grid">
+  <div class="card"><h3>Business Presentation</h3><p>Clean corporate slides for meetings.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Pitch Deck</h3><p>Startup and investor pitch presentation.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Company Profile</h3><p>Professional company overview slides.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Marketing Presentation</h3><p>Marketing and campaign presentations.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Training Presentation</h3><p>Employee and skill training slides.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Project Proposal</h3><p>Client and project proposal slides.</p><div class="download-box"><a href="#">Download</a></div></div>
+</div>
+
+<!-- ================= POWER BI ================= -->
+<h2 class="section-title">Power BI Templates (6)</h2>
+<p class="section-desc">
+Power BI dashboard templates designed for data visualization,
+management reporting, and performance analysis.
+</p>
+
+<div class="grid">
+  <div class="card"><h3>Sales Dashboard</h3><p>Visualize sales performance and trends.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Finance Dashboard</h3><p>Financial KPIs and reporting dashboard.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>HR Dashboard</h3><p>Employee and HR analytics dashboard.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Operations Dashboard</h3><p>Operational metrics and monitoring.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Inventory Dashboard</h3><p>Stock and inventory visualization.</p><div class="download-box"><a href="#">Download</a></div></div>
+  <div class="card"><h3>Executive Dashboard</h3><p>High-level management reporting.</p><div class="download-box"><a href="#">Download</a></div></div>
+</div>
+
+</div>
+
 <footer>
   © 2025 DSTLP.com | Support:
   <a href="mailto:Support@dstlp.com" style="color:#93c5fd;">Support@dstlp.com</a>
