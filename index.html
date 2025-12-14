@@ -1,12 +1,275 @@
-<!DOCTYPE html>
-<html>
+<<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DSTLP</title>
+  <title>DSTLP | Digital Studio Templates & Layouts Platform</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+        content="DSTLP provides professionally designed Excel and Word templates for finance, HR, resumes, invoices, reports and business productivity.">
+  <meta name="keywords"
+        content="Excel templates, Word templates, business templates, resume templates, invoice templates">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== HEADER ===== */
+    .header {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .header p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    .btn-primary {
+      background: #2563eb;
+      color: white;
+      padding: 14px 30px;
+      border-radius: 6px;
+      font-size: 16px;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: #1d4ed8;
+    }
+
+    /* ===== SECTIONS ===== */
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .section p.center {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      color: #4b5563;
+    }
+
+    /* ===== CARDS ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+      padding: 25px;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .card p {
+      color: #4b5563;
+      font-size: 15px;
+    }
+
+    /* ===== HOW IT WORKS ===== */
+    .steps {
+      counter-reset: step;
+    }
+
+    .step {
+      padding-left: 50px;
+      position: relative;
+      margin-bottom: 25px;
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #2563eb;
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 32px;
+      font-weight: bold;
+    }
+
+    /* ===== CTA ===== */
+    .cta {
+      background: #f1f5f9;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .cta h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0f172a;
+      color: #cbd5f5;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>DSTLP</h1>
-  <p>Digital Studio Templates & Layouts Platform</p>
-  <p>Download professional Excel & Word templates for business and personal use</p>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1>DSTLP</h1>
+    <p>
+      Digital Studio Templates & Layouts Platform  
+      <br>
+      Ready-made Excel & Word templates designed for professionals, businesses,
+      and everyday productivity.
+    </p>
+
+    <a href="templates.html" class="btn-primary">Browse Templates</a>
+  </header>
+
+  <!-- WHAT WE OFFER -->
+  <section class="section">
+    <h2>What We Offer</h2>
+    <p class="center">
+      DSTLP provides clean, practical, and professionally structured templates
+      that save time and improve accuracy.
+    </p>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Excel Templates</h3>
+        <p>
+          Finance, accounting, HR, inventory, project management,
+          trackers, and dashboards.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Word Templates</h3>
+        <p>
+          Resumes, invoices, letters, agreements, reports,
+          and official documents.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Professional Design</h3>
+        <p>
+          Clean layouts, structured formatting, and practical usability
+          for real-world work.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Ready to Use</h3>
+        <p>
+          Download, open, and start using instantly — no learning curve.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section">
+    <h2>How It Works</h2>
+
+    <div class="steps">
+      <div class="step">
+        Browse Excel or Word template categories.
+      </div>
+      <div class="step">
+        Select the template that fits your requirement.
+      </div>
+      <div class="step">
+        Download the ZIP file instantly.
+      </div>
+      <div class="step">
+        Open in Excel or Word and start working.
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY DSTLP -->
+  <section class="section">
+    <h2>Why Choose DSTLP</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Time Saving</h3>
+        <p>
+          Avoid creating documents from scratch.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Accuracy</h3>
+        <p>
+          Well-structured templates reduce errors.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Business Ready</h3>
+        <p>
+          Suitable for professionals, freelancers, startups, and enterprises.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Start Using Professional Templates Today</h2>
+    <p>
+      Download ready-made Excel & Word templates and focus on your work,
+      not formatting.
+    </p>
+    <a href="templates.html" class="btn-primary">View Templates</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 DSTLP.com — Digital Studio Templates & Layouts Platform
+  </footer>
+
 </body>
 </html>
