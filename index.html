@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,9 +6,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-        content="DSTLP provides professionally designed Excel and Word templates for finance, HR, resumes, invoices, reports and business productivity.">
-  <meta name="keywords"
-        content="Excel templates, Word templates, business templates, resume templates, invoice templates">
+        content="DSTLP provides ready-made Excel and Word templates including resumes, dashboards, invoices, HR and business documents.">
 
   <style>
     body {
@@ -18,34 +16,52 @@
       line-height: 1.6;
     }
 
-    a {
-      text-decoration: none;
-      color: inherit;
+    a { text-decoration: none; }
+
+    /* ===== HEADER WITH SLIDER ===== */
+    .header {
+      position: relative;
+      height: 75vh;
+      min-height: 480px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      overflow: hidden;
     }
 
-    /* ===== HEADER ===== */
-    .header {
-      background: linear-gradient(135deg, #0f172a, #1e293b);
-      color: white;
-      padding: 70px 20px;
-      text-align: center;
+    .header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(15, 23, 42, 0.85);
+      z-index: 1;
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      padding: 20px;
     }
 
     .header h1 {
-      font-size: 42px;
+      font-size: 44px;
       margin-bottom: 10px;
+      letter-spacing: 2px;
     }
 
     .header p {
       font-size: 18px;
-      max-width: 800px;
-      margin: 0 auto 30px;
+      margin-bottom: 30px;
+      color: #e5e7eb;
     }
 
     .btn-primary {
       background: #2563eb;
       color: white;
-      padding: 14px 30px;
+      padding: 14px 32px;
       border-radius: 6px;
       font-size: 16px;
       display: inline-block;
@@ -57,15 +73,15 @@
 
     /* ===== SECTIONS ===== */
     .section {
-      padding: 60px 20px;
       max-width: 1100px;
       margin: auto;
+      padding: 60px 20px;
     }
 
     .section h2 {
       text-align: center;
       font-size: 30px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     .section p.center {
@@ -83,49 +99,21 @@
     }
 
     .card {
+      background: white;
       border: 1px solid #e5e7eb;
       border-radius: 8px;
       padding: 25px;
-      background: white;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.04);
     }
 
     .card h3 {
       margin-top: 0;
-      margin-bottom: 10px;
       font-size: 20px;
     }
 
     .card p {
       color: #4b5563;
       font-size: 15px;
-    }
-
-    /* ===== HOW IT WORKS ===== */
-    .steps {
-      counter-reset: step;
-    }
-
-    .step {
-      padding-left: 50px;
-      position: relative;
-      margin-bottom: 25px;
-    }
-
-    .step::before {
-      counter-increment: step;
-      content: counter(step);
-      position: absolute;
-      left: 0;
-      top: 0;
-      background: #2563eb;
-      color: white;
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      text-align: center;
-      line-height: 32px;
-      font-weight: bold;
     }
 
     /* ===== CTA ===== */
@@ -135,12 +123,6 @@
       padding: 60px 20px;
     }
 
-    .cta h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
-    }
-
-    /* ===== FOOTER ===== */
     footer {
       background: #0f172a;
       color: #cbd5f5;
@@ -154,122 +136,79 @@
 <body>
 
   <!-- HEADER -->
-  <header class="header">
-    <h1>DSTLP</h1>
-    <p>
-      Digital Studio Templates & Layouts Platform  
-      <br>
-      Ready-made Excel & Word templates designed for professionals, businesses,
-      and everyday productivity.
-    </p>
-
-    <a href="templates.html" class="btn-primary">Browse Templates</a>
+  <header class="header" id="headerSlider">
+    <div class="header-content">
+      <h1>DSTLP</h1>
+      <p>
+        Digital Studio Templates & Layouts Platform<br>
+        Ready-made Excel & Word templates for resumes, dashboards and business use
+      </p>
+      <a href="#" class="btn-primary">Browse Templates</a>
+    </div>
   </header>
 
   <!-- WHAT WE OFFER -->
   <section class="section">
     <h2>What We Offer</h2>
     <p class="center">
-      DSTLP provides clean, practical, and professionally structured templates
-      that save time and improve accuracy.
+      Professional templates designed for accuracy, clarity and real-world usage.
     </p>
 
     <div class="grid">
       <div class="card">
         <h3>Excel Templates</h3>
-        <p>
-          Finance, accounting, HR, inventory, project management,
-          trackers, and dashboards.
-        </p>
+        <p>Dashboards, finance sheets, HR trackers and analytics.</p>
       </div>
 
       <div class="card">
         <h3>Word Templates</h3>
-        <p>
-          Resumes, invoices, letters, agreements, reports,
-          and official documents.
-        </p>
+        <p>Resumes, letters, invoices and business documents.</p>
       </div>
 
       <div class="card">
-        <h3>Professional Design</h3>
-        <p>
-          Clean layouts, structured formatting, and practical usability
-          for real-world work.
-        </p>
+        <h3>Professional Quality</h3>
+        <p>Clean layouts with structured formatting.</p>
       </div>
 
       <div class="card">
-        <h3>Ready to Use</h3>
-        <p>
-          Download, open, and start using instantly — no learning curve.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class="section">
-    <h2>How It Works</h2>
-
-    <div class="steps">
-      <div class="step">
-        Browse Excel or Word template categories.
-      </div>
-      <div class="step">
-        Select the template that fits your requirement.
-      </div>
-      <div class="step">
-        Download the ZIP file instantly.
-      </div>
-      <div class="step">
-        Open in Excel or Word and start working.
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY DSTLP -->
-  <section class="section">
-    <h2>Why Choose DSTLP</h2>
-
-    <div class="grid">
-      <div class="card">
-        <h3>Time Saving</h3>
-        <p>
-          Avoid creating documents from scratch.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Accuracy</h3>
-        <p>
-          Well-structured templates reduce errors.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Business Ready</h3>
-        <p>
-          Suitable for professionals, freelancers, startups, and enterprises.
-        </p>
+        <h3>Instant Use</h3>
+        <p>Download and start working immediately.</p>
       </div>
     </div>
   </section>
 
   <!-- CTA -->
   <section class="cta">
-    <h2>Start Using Professional Templates Today</h2>
-    <p>
-      Download ready-made Excel & Word templates and focus on your work,
-      not formatting.
-    </p>
-    <a href="templates.html" class="btn-primary">View Templates</a>
+    <h2>Work Smarter with Ready-Made Templates</h2>
+    <p>Save time and focus on results.</p>
   </section>
 
   <!-- FOOTER -->
   <footer>
     © 2025 DSTLP.com — Digital Studio Templates & Layouts Platform
   </footer>
+
+  <!-- BACKGROUND IMAGE SLIDER -->
+  <script>
+    const images = [
+      "Resume%201.jpg",
+      "Resume%202.jpg",
+      "Excel%201.jpg",
+      "power%20bi%20desh%20board.png"
+    ];
+
+    let i = 0;
+    const header = document.getElementById("headerSlider");
+
+    function changeBg() {
+      header.style.background =
+        `url('${images[i]}') center / cover no-repeat`;
+      i = (i + 1) % images.length;
+    }
+
+    changeBg();
+    setInterval(changeBg, 4000);
+  </script>
 
 </body>
 </html>
