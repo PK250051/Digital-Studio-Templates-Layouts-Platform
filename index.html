@@ -18,35 +18,35 @@
 
     a { text-decoration: none; }
 
-    /* ===== HEADER WITH SLIDER ===== */
+    /* ===== HEADER (SMALL + FULL IMAGE) ===== */
     .header {
-  position: relative;
-  height: 420px;              /* SMALL HEADER */
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  overflow: hidden;
+      position: relative;
+      height: 380px;                 /* SMALL HEADER */
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      overflow: hidden;
 
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;     /* FULL IMAGE, NO TILING */
-}
+      background-position: center top;   /* SHOW FULL IMAGE */
+      background-repeat: no-repeat;
+      background-size: contain;          /* NO CROP */
+      background-color: #0f172a;         /* BLUE SIDES IF IMAGE SMALL */
+    }
 
-.header::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to right,
-    rgba(15, 23, 42, 0.65),
-    rgba(15, 23, 42, 0.35)
-  );                           /* LIGHT, REALISTIC OVERLAY */
-  z-index: 1;
-}
-
+    .header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to right,
+        rgba(15, 23, 42, 0.75),
+        rgba(15, 23, 42, 0.45)
+      );
+      z-index: 1;
+    }
 
     .header-content {
       position: relative;
@@ -56,23 +56,23 @@
     }
 
     .header h1 {
-      font-size: 44px;
-      margin-bottom: 10px;
+      font-size: 34px;
+      margin-bottom: 8px;
       letter-spacing: 2px;
     }
 
     .header p {
-      font-size: 18px;
-      margin-bottom: 30px;
+      font-size: 16px;
+      margin-bottom: 22px;
       color: #e5e7eb;
     }
 
     .btn-primary {
       background: #2563eb;
       color: white;
-      padding: 14px 32px;
+      padding: 12px 28px;
       border-radius: 6px;
-      font-size: 16px;
+      font-size: 15px;
       display: inline-block;
     }
 
@@ -89,7 +89,7 @@
 
     .section h2 {
       text-align: center;
-      font-size: 30px;
+      font-size: 28px;
       margin-bottom: 15px;
     }
 
@@ -152,7 +152,7 @@
         Digital Studio Templates & Layouts Platform<br>
         Ready-made Excel & Word templates for resumes, dashboards and business use
       </p>
-    <a href="templates.html" class="btn-primary">Browse Templates</a>
+      <a href="templates.html" class="btn-primary">Browse Templates</a>
     </div>
   </header>
 
@@ -194,12 +194,12 @@
 
   <!-- FOOTER -->
   <footer>
-  © 2025 DSTLP.com — Digital Studio Templates & Layouts Platform <br>
-  Contact Support: 
-  <a href="mailto:Support@dstlp.com" style="color:#93c5fd;">
-    Support@dstlp.com
-  </a>
-</footer>
+    © 2025 DSTLP.com — Digital Studio Templates & Layouts Platform <br>
+    Contact Support:
+    <a href="mailto:Support@dstlp.com" style="color:#93c5fd;">
+      Support@dstlp.com
+    </a>
+  </footer>
 
   <!-- BACKGROUND IMAGE SLIDER -->
   <script>
@@ -214,8 +214,7 @@
     const header = document.getElementById("headerSlider");
 
     function changeBg() {
-      header.style.background =
-        `url('${images[i]}') center / cover no-repeat`;
+      header.style.backgroundImage = `url('${images[i]}')`;
       i = (i + 1) % images.length;
     }
 
