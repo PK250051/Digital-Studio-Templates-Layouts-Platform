@@ -1,117 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>DSTLP | Digital Studio Templates & Layouts Platform</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>DSTLP | Digital Studio Templates & Layouts Platform</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-/* =========================================================
-   BASE STYLES
-   ========================================================= */
-body{
-  margin:0;
-  font-family:Arial, Helvetica, sans-serif;
-  color:#1f2937;
-  line-height:1.7;
-  background:#ffffff;
-}
-a{text-decoration:none}
+  <meta name="description"
+        content="DSTLP provides ready-made Excel and Word templates including resumes, dashboards, invoices, HR and business documents.">
 
-/* =========================================================
-   NAVIGATION BAR
-   ========================================================= */
-.navbar{
-  background:#0f172a;
-  padding:16px 40px;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-}
-.navbar strong{
-  color:#ffffff;
-  font-size:20px;
-  letter-spacing:1px;
-}
-.navbar a{
-  color:#e5e7eb;
-  margin-left:20px;
-  font-size:14px;
-}
-.navbar a:hover{
-  color:#ffffff;
-}
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #1f2937;
+      line-height: 1.7;
+      background: #ffffff;
+    }
 
-/* =========================================================
-   HERO SECTION WITH IMAGE SLIDER
-   ========================================================= */
-.hero{
-  position:relative;
-  height:420px;
-  color:white;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  background-size:cover;
-  background-position:center;
-}
-.hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(
-    to right,
-    rgba(15,23,42,0.75),
-    rgba(15,23,42,0.45)
-  );
-}
-.hero-content{
-  position:relative;
-  z-index:2;
-  max-width:900px;
-  padding:20px;
-}
-.hero h1{
-  font-size:42px;
-  margin-bottom:10px;
-}
-.hero p{
-  color:#cbd5f5;
-  font-size:16px;
-}
+    a { text-decoration: none; }
 
-/* =========================================================
-   SECTIONS
-   ========================================================= */
-.section{
-  max-width:1100px;
-  margin:auto;
-  padding:70px 20px;
-}
-.section h2{
-  font-size:28px;
-  margin-bottom:20px;
-}
+    /* ===== NAVBAR ===== */
+    .navbar {
+      background: #0f172a;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 20;
+    }
 
-/* =========================================================
-   FOOTER
-   ========================================================= */
-footer{
-  background:#0f172a;
-  color:#cbd5f5;
-  text-align:center;
-  padding:25px;
-  font-size:14px;
-}
-</style>
+    .navbar strong {
+      color: white;
+      font-size: 20px;
+      letter-spacing: 1px;
+    }
+
+    .navbar a {
+      color: #e5e7eb;
+      margin-left: 20px;
+      font-size: 15px;
+    }
+
+    .navbar a:hover {
+      color: #ffffff;
+      border-bottom: 2px solid #2563eb;
+      padding-bottom: 3px;
+    }
+
+    /* ===== HEADER (SMALL, FULL IMAGE) ===== */
+    .header {
+      position: relative;
+      height: 380px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      overflow: hidden;
+
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-color: #0f172a;
+    }
+
+    .header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to right,
+        rgba(15, 23, 42, 0.75),
+        rgba(15, 23, 42, 0.45)
+      );
+      z-index: 1;
+    }
+
+    .header-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      padding: 20px;
+    }
+
+    .header h1 {
+      font-size: 34px;
+      margin-bottom: 8px;
+      letter-spacing: 2px;
+    }
+
+    .header p {
+      font-size: 16px;
+      margin-bottom: 22px;
+      color: #e5e7eb;
+    }
+
+    .btn-primary {
+      background: #2563eb;
+      color: white;
+      padding: 12px 28px;
+      border-radius: 6px;
+      font-size: 15px;
+      display: inline-block;
+    }
+
+    .btn-primary:hover {
+      background: #1d4ed8;
+    }
+
+    /* ===== MAIN SECTION ===== */
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 70px 20px;
+    }
+
+    /* ===== CONTENT BLOCKS ===== */
+    .content-block {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 70px;
+    }
+
+    .content-block img {
+      width: 45%;
+      max-width: 480px;
+      border-radius: 8px;
+      border: 1px solid #e5e7eb;
+    }
+
+    .content-text {
+      width: 55%;
+    }
+
+    .content-text h3 {
+      margin-top: 0;
+      font-size: 22px;
+    }
+
+    .content-text p {
+      color: #4b5563;
+      margin-bottom: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .content-block {
+        flex-direction: column;
+      }
+      .content-block img,
+      .content-text {
+        width: 100%;
+      }
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0f172a;
+      color: #cbd5f5;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- =======================================================
-     NAVIGATION
-     ======================================================= -->
+<!-- NAVBAR -->
 <div class="navbar">
   <strong>DSTLP</strong>
   <div>
@@ -123,133 +182,99 @@ footer{
   </div>
 </div>
 
-<!-- =======================================================
-     HERO / SLIDER
-     ======================================================= -->
-<div class="hero" id="heroSlider">
-  <div class="hero-content">
+<!-- HEADER -->
+<header class="header" id="headerSlider">
+  <div class="header-content">
     <h1>DSTLP</h1>
     <p>
       Digital Studio Templates & Layouts Platform<br>
-      Ready-made Excel, Word, PowerPoint & Power BI templates
+      Ready-made Excel & Word templates for resumes, dashboards and business use
     </p>
+    <a href="templates.html" class="btn-primary">Browse Templates</a>
   </div>
-</div>
+</header>
 
-<!-- =======================================================
-     MAIN CONTENT
-     ======================================================= -->
-<div class="section">
+<!-- MAIN CONTENT -->
+<section class="section">
 
-  <!-- Paragraph 1 -->
-  <p>
-    DSTLP is a professional platform created to simplify everyday documentation,
-    reporting, and presentation work for individuals and businesses.
-    Our templates are designed with real-world usage in mind, ensuring clarity,
-    accuracy, and consistency across all files.
-  </p>
+  <div class="content-block">
+    <img src="Resume%201.jpg" alt="Resume Template">
+    <div class="content-text">
+      <h3>Professionally Designed Resume Templates</h3>
+      <p>DSTLP offers resume templates created according to modern hiring standards.</p>
+      <p>Each design highlights skills, experience and achievements clearly.</p>
+      <p>Suitable for freshers, experienced professionals and leadership roles.</p>
+    </div>
+  </div>
 
-  <!-- Paragraph 2 -->
-  <p>
-    In modern workplaces, time and accuracy are critical.
-    DSTLP eliminates repetitive formatting tasks by providing ready-to-use templates
-    that follow industry standards and professional layouts.
-  </p>
+  <div class="content-block">
+    <div class="content-text">
+      <h3>Excel Templates for Business & Productivity</h3>
+      <p>Our Excel templates help manage finance, HR, inventory and projects.</p>
+      <p>They are structured to reduce manual work and calculation errors.</p>
+      <p>Useful for individuals, startups and established businesses.</p>
+    </div>
+    <img src="Excel%201.jpg" alt="Excel Template">
+  </div>
 
-  <!-- Paragraph 3 -->
-  <p>
-    Our Excel templates support financial planning, HR management,
-    project tracking, dashboards, and operational reporting.
-    Built-in formulas and structured data entry reduce errors
-    and improve productivity.
-  </p>
+  <div class="content-block">
+    <img src="power%20bi%20desh%20board.png" alt="Dashboard Template">
+    <div class="content-text">
+      <h3>Dashboards & Reporting Formats</h3>
+      <p>Visual dashboards support faster and more accurate decision-making.</p>
+      <p>DSTLP dashboards are inspired by professional Power BI layouts.</p>
+      <p>Ideal for management reviews and performance tracking.</p>
+    </div>
+  </div>
 
-  <!-- Paragraph 4 -->
-  <p>
-    Word templates available on DSTLP include resumes,
-    official letters, invoices, certificates, and business documents.
-    Each file is carefully structured to maintain professional tone
-    and readability.
-  </p>
+  <div class="content-block">
+    <div class="content-text">
+      <h3>Word Templates for Daily Professional Use</h3>
+      <p>Word templates include resumes, invoices, letters and reports.</p>
+      <p>All formats follow standard business documentation practices.</p>
+      <p>No formatting effort is required—just edit and use.</p>
+    </div>
+    <img src="Resume%202.jpg" alt="Word Template">
+  </div>
 
-  <!-- Paragraph 5 -->
-  <p>
-    Presentation templates for PowerPoint are designed to support
-    meetings, proposals, training sessions, and executive communication.
-    Clean visuals and logical slide flow help convey information effectively.
-  </p>
+  <div class="content-block">
+    <img src="Resume%201.jpg" alt="Ready Made Templates">
+    <div class="content-text">
+      <h3>Ready-to-Use, Time-Saving Templates</h3>
+      <p>Every DSTLP template is designed for immediate use.</p>
+      <p>No learning curve and no complex setup is required.</p>
+      <p>Focus on your work, not document formatting.</p>
+    </div>
+  </div>
 
-  <!-- Paragraph 6 -->
-  <p>
-    Power BI templates on DSTLP focus on analytics and decision-making.
-    These dashboards visualize complex data into clear insights,
-    enabling management to act confidently.
-  </p>
+</section>
 
-  <!-- Paragraph 7 -->
-  <p>
-    DSTLP templates are suitable for students, job seekers,
-    working professionals, startups, and established organizations.
-    The platform supports both personal and enterprise-level use cases.
-  </p>
-
-  <!-- Paragraph 8 -->
-  <p>
-    Every template is designed to be easy to customize.
-    Users can modify text, numbers, colors, and branding
-    without requiring advanced technical skills.
-  </p>
-
-  <!-- Paragraph 9 -->
-  <p>
-    By using DSTLP, users can maintain consistency across documents
-    and reports, which strengthens professional image
-    and improves communication quality.
-  </p>
-
-  <!-- Paragraph 10 -->
-  <p>
-    DSTLP is continuously evolving to include more templates,
-    better designs, and advanced layouts.
-    Our goal is to become a reliable digital studio
-    for professional documentation worldwide.
-  </p>
-
-</div>
-
-<!-- =======================================================
-     FOOTER
-     ======================================================= -->
+<!-- FOOTER -->
 <footer>
-  © 2025 DSTLP.com | Support:
+  © 2025 DSTLP.com — Digital Studio Templates & Layouts Platform <br>
+  Contact Support:
   <a href="mailto:Support@dstlp.com" style="color:#93c5fd;">Support@dstlp.com</a>
 </footer>
 
-<!-- =======================================================
-     BACKGROUND IMAGE SLIDER SCRIPT
-     ======================================================= -->
+<!-- HEADER IMAGE SLIDER -->
 <script>
-/* Image slider for hero section */
-const images = [
-  "Resume 1.jpg",
-  "Resume 2.jpg",
-  "Excel 1.jpg",
-  "power bi desh board.png"
-];
+  const images = [
+    "Resume%201.jpg",
+    "Resume%202.jpg",
+    "Excel%201.jpg",
+    "power%20bi%20desh%20board.png"
+  ];
 
-let index = 0;
-const hero = document.getElementById("heroSlider");
+  let i = 0;
+  const header = document.getElementById("headerSlider");
 
-function changeHero(){
-  hero.style.backgroundImage = "url('" + images[index] + "')";
-  index = (index + 1) % images.length;
-}
+  function changeBg() {
+    header.style.backgroundImage = `url('${images[i]}')`;
+    i = (i + 1) % images.length;
+  }
 
-/* Initial load */
-changeHero();
-
-/* Change every 4 seconds */
-setInterval(changeHero, 4000);
+  changeBg();
+  setInterval(changeBg, 4000);
 </script>
 
 </body>
