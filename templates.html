@@ -9,8 +9,8 @@
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
-      background: #ffffff;
       color: #1f2937;
+      background: #ffffff;
       line-height: 1.6;
     }
 
@@ -18,11 +18,14 @@
 
     /* ===== NAVBAR ===== */
     .navbar {
-      background: #0f172a;
+      background: linear-gradient(180deg, #0b1325, #0f172a);
       padding: 16px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
 
     .navbar strong {
@@ -33,7 +36,7 @@
 
     .navbar a {
       color: #e5e7eb;
-      margin-left: 20px;
+      margin-left: 22px;
       font-size: 15px;
     }
 
@@ -45,21 +48,31 @@
 
     /* ===== PAGE HEADER ===== */
     .page-header {
-      background: linear-gradient(135deg, #1e293b, #0f172a);
+      background: radial-gradient(circle at top, #1e293b, #020617);
       color: white;
-      padding: 60px 20px;
+      padding: 90px 20px;
       text-align: center;
     }
 
-    /* ===== SECTION STYLES ===== */
+    .page-header h1 {
+      font-size: 36px;
+      margin-bottom: 12px;
+    }
+
+    .page-header p {
+      color: #cbd5f5;
+      font-size: 16px;
+    }
+
+    /* ===== SECTIONS ===== */
     .section {
-      padding: 70px 20px;
+      padding: 80px 20px;
     }
 
     .bg-resume { background: #f8fafc; }
-    .bg-excel  { background: #eef2ff; }
-    .bg-ppt    { background: #fef3c7; }
-    .bg-powerbi{ background: #ecfeff; }
+    .bg-excel { background: #eef2ff; }
+    .bg-ppt { background: #fff7ed; }
+    .bg-powerbi { background: #ecfeff; }
 
     .container {
       max-width: 1300px;
@@ -68,35 +81,36 @@
 
     .section-header {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
     }
 
     .section-header h2 {
-      font-size: 28px;
+      font-size: 30px;
       margin-bottom: 10px;
     }
 
     .section-header p {
-      color: #4b5563;
       max-width: 800px;
       margin: auto;
+      color: #475569;
     }
 
     /* ===== GRID ===== */
     .grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      gap: 28px;
     }
 
     .card {
       background: white;
+      border-radius: 10px;
       border: 1px solid #e5e7eb;
-      border-radius: 8px;
-      padding: 25px;
+      padding: 28px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     }
 
     .card h3 {
@@ -106,20 +120,20 @@
 
     .card p {
       font-size: 14px;
-      color: #4b5563;
-      margin-bottom: 18px;
+      color: #475569;
+      margin-bottom: 22px;
     }
 
     .download-box {
       border-top: 1px solid #e5e7eb;
-      padding-top: 15px;
+      padding-top: 16px;
       text-align: center;
     }
 
     .download-box a {
       background: #2563eb;
       color: white;
-      padding: 10px 22px;
+      padding: 11px 24px;
       border-radius: 6px;
       font-size: 14px;
       display: inline-block;
@@ -130,10 +144,10 @@
     }
 
     footer {
-      background: #0f172a;
-      color: #cbd5f5;
+      background: #020617;
+      color: #94a3b8;
       text-align: center;
-      padding: 25px;
+      padding: 30px;
       font-size: 14px;
     }
 
@@ -165,15 +179,132 @@
   <p>High-quality Resume, Excel, PowerPoint & Power BI templates for real-world use</p>
 </div>
 
-<!-- ================= RESUME SECTION ================= -->
+<!-- ================= RESUME ================= -->
 <section class="section bg-resume">
   <div class="container">
     <div class="section-header">
       <h2>Resume Templates</h2>
-      <p>
-        Professionally structured resume formats designed for freshers,
-        experienced professionals, technical roles, and leadership positions.
-      </p>
+      <p>Professionally structured resumes for freshers, experienced professionals,
+         technical roles, and leadership positions.</p>
     </div>
 
     <div class="grid">
+      <div class="card">
+        <h3>Modern Professional Resume</h3>
+        <p>Clean corporate resume layout highlighting skills, experience and achievements.
+           Fully ATS-friendly and easy to customize.</p>
+        <div class="download-box"><a href="#">Download</a></div>
+      </div>
+
+      <div class="card">
+        <h3>Executive Resume</h3>
+        <p>Designed for senior leadership roles with emphasis on strategy, impact and career growth.</p>
+        <div class="download-box"><a href="#">Download</a></div>
+      </div>
+
+      <div class="card">
+        <h3>Fresher Resume</h3>
+        <p>Ideal for students and entry-level candidates focusing on education, skills and projects.</p>
+        <div class="download-box"><a href="#">Download</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXCEL ================= -->
+<section class="section bg-excel">
+  <div class="container">
+    <div class="section-header">
+      <h2>Excel Templates</h2>
+      <p>Excel templates for finance, HR, operations and business tracking with built-in automation.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Monthly Budget Planner</h3>
+        <p>Plan and track income and expenses with automatic calculations and balance summary.</p>
+        <div class="download-box"><a href="#">Download</a></div>
+      </div>
+
+      <div class="card">
+        <h3>Expense Tracker</h3>
+        <p>Track daily and monthly expenses by category for better financial control.</p>
+        <div class="download-box"><a href="#">Download</a></div>
+      </div>
+
+      <div class="card">
+        <h3>Profit & Loss Statement</h3>
+        <p>Analyze revenue, cost and profit for monthly or yearly business performance.</p>
+        <div class="download-box"><a href="#">Download</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PPT ================= -->
+<section class="section bg-ppt">
+  <div class="container">
+    <div class="section-header">
+      <h2>PowerPoint Templates</h2>
+      <p>Corporate presentation templates for meetings, proposals and training sessions.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Business Presentation</h3>
+        <p>Clean corporate slides suitable for meetings and management reviews.</p>
+        <div class="download-box"><a href="#">Download</a></div>
+      </div>
+
+      <div class="card">
+        <h3>Pitch Deck</h3>
+        <p>Startup and investor-ready presentation with structured storytelling.</p>
+        <div class="download-box"><a href="#">Download</a></div>
+      </div>
+
+      <div class="card">
+        <h3>Company Profile</h3>
+        <p>Professional company overview slides for clients and partners.</p>
+        <div class="download-box"><a href="#">Download</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POWER BI ================= -->
+<section class="section bg-powerbi">
+  <div class="container">
+    <div class="section-header">
+      <h2>Power BI Templates</h2>
+      <p>Ready-to-use Power BI dashboards for reporting, analytics and performance monitoring.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Sales Dashboard</h3>
+        <p>Visualize sales trends, targets and performance metrics clearly.</p>
+        <div class="download-box"><a href="#">Download</a></div>
+      </div>
+
+      <div class="card">
+        <h3>Finance Dashboard</h3>
+        <p>Track financial KPIs, revenue and expense insights.</p>
+        <div class="download-box"><a href="#">Download</a></div>
+      </div>
+
+      <div class="card">
+        <h3>HR Dashboard</h3>
+        <p>Analyze workforce data and HR metrics efficiently.</p>
+        <div class="download-box"><a href="#">Download</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2025 DSTLP.com | Support:
+  <a href="mailto:Support@dstlp.com" style="color:#93c5fd;">Support@dstlp.com</a>
+</footer>
+
+</body>
+</html>
