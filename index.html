@@ -1,51 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>DSTLP | Digital Studio Templates & Layouts Platform</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>DSTLP | Digital Studio Templates & Layouts Platform</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body { margin:0; font-family:Arial, Helvetica, sans-serif; color:#1f2937; }
-    a { text-decoration:none; }
+<style>
+/* =========================================================
+   BASE STYLES
+   ========================================================= */
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#1f2937;
+  line-height:1.7;
+  background:#ffffff;
+}
+a{text-decoration:none}
 
-    .navbar {
-      background:#0f172a;
-      padding:16px 40px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-    }
-    .navbar a { color:#e5e7eb; margin-left:20px; }
-    .navbar a:hover { color:#ffffff; }
+/* =========================================================
+   NAVIGATION BAR
+   ========================================================= */
+.navbar{
+  background:#0f172a;
+  padding:16px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.navbar strong{
+  color:#ffffff;
+  font-size:20px;
+  letter-spacing:1px;
+}
+.navbar a{
+  color:#e5e7eb;
+  margin-left:20px;
+  font-size:14px;
+}
+.navbar a:hover{
+  color:#ffffff;
+}
 
-    .header {
-      background:#1e293b;
-      color:white;
-      padding:60px 20px;
-      text-align:center;
-    }
+/* =========================================================
+   HERO SECTION WITH IMAGE SLIDER
+   ========================================================= */
+.hero{
+  position:relative;
+  height:420px;
+  color:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background-size:cover;
+  background-position:center;
+}
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to right,
+    rgba(15,23,42,0.75),
+    rgba(15,23,42,0.45)
+  );
+}
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:900px;
+  padding:20px;
+}
+.hero h1{
+  font-size:42px;
+  margin-bottom:10px;
+}
+.hero p{
+  color:#cbd5f5;
+  font-size:16px;
+}
 
-    .section {
-      max-width:1100px;
-      margin:auto;
-      padding:50px 20px;
-    }
+/* =========================================================
+   SECTIONS
+   ========================================================= */
+.section{
+  max-width:1100px;
+  margin:auto;
+  padding:70px 20px;
+}
+.section h2{
+  font-size:28px;
+  margin-bottom:20px;
+}
 
-    footer {
-      background:#0f172a;
-      color:#cbd5f5;
-      text-align:center;
-      padding:20px;
-    }
-  </style>
+/* =========================================================
+   FOOTER
+   ========================================================= */
+footer{
+  background:#0f172a;
+  color:#cbd5f5;
+  text-align:center;
+  padding:25px;
+  font-size:14px;
+}
+</style>
 </head>
 
 <body>
 
-<!-- MENU -->
+<!-- =======================================================
+     NAVIGATION
+     ======================================================= -->
 <div class="navbar">
-  <strong style="color:white;">DSTLP</strong>
+  <strong>DSTLP</strong>
   <div>
     <a href="index.html">Home</a>
     <a href="templates.html">Templates</a>
@@ -55,26 +123,134 @@
   </div>
 </div>
 
-<!-- HEADER -->
-<div class="header">
-  <h1>DSTLP</h1>
-  <p>Digital Studio Templates & Layouts Platform</p>
-  <p>Ready-made Excel & Word templates for professionals</p>
+<!-- =======================================================
+     HERO / SLIDER
+     ======================================================= -->
+<div class="hero" id="heroSlider">
+  <div class="hero-content">
+    <h1>DSTLP</h1>
+    <p>
+      Digital Studio Templates & Layouts Platform<br>
+      Ready-made Excel, Word, PowerPoint & Power BI templates
+    </p>
+  </div>
 </div>
 
-<!-- CONTENT -->
+<!-- =======================================================
+     MAIN CONTENT
+     ======================================================= -->
 <div class="section">
-  <p>DSTLP provides professionally designed templates that help individuals and businesses save time and work efficiently.</p>
-  <p>Our Excel templates support finance, HR, dashboards, and tracking needs across industries.</p>
-  <p>Word templates include resumes, invoices, letters, and official documents.</p>
-  <p>Each template is structured for clarity, accuracy, and real-world usage.</p>
-  <p>All files are ready to use with no complex setup required.</p>
+
+  <!-- Paragraph 1 -->
+  <p>
+    DSTLP is a professional platform created to simplify everyday documentation,
+    reporting, and presentation work for individuals and businesses.
+    Our templates are designed with real-world usage in mind, ensuring clarity,
+    accuracy, and consistency across all files.
+  </p>
+
+  <!-- Paragraph 2 -->
+  <p>
+    In modern workplaces, time and accuracy are critical.
+    DSTLP eliminates repetitive formatting tasks by providing ready-to-use templates
+    that follow industry standards and professional layouts.
+  </p>
+
+  <!-- Paragraph 3 -->
+  <p>
+    Our Excel templates support financial planning, HR management,
+    project tracking, dashboards, and operational reporting.
+    Built-in formulas and structured data entry reduce errors
+    and improve productivity.
+  </p>
+
+  <!-- Paragraph 4 -->
+  <p>
+    Word templates available on DSTLP include resumes,
+    official letters, invoices, certificates, and business documents.
+    Each file is carefully structured to maintain professional tone
+    and readability.
+  </p>
+
+  <!-- Paragraph 5 -->
+  <p>
+    Presentation templates for PowerPoint are designed to support
+    meetings, proposals, training sessions, and executive communication.
+    Clean visuals and logical slide flow help convey information effectively.
+  </p>
+
+  <!-- Paragraph 6 -->
+  <p>
+    Power BI templates on DSTLP focus on analytics and decision-making.
+    These dashboards visualize complex data into clear insights,
+    enabling management to act confidently.
+  </p>
+
+  <!-- Paragraph 7 -->
+  <p>
+    DSTLP templates are suitable for students, job seekers,
+    working professionals, startups, and established organizations.
+    The platform supports both personal and enterprise-level use cases.
+  </p>
+
+  <!-- Paragraph 8 -->
+  <p>
+    Every template is designed to be easy to customize.
+    Users can modify text, numbers, colors, and branding
+    without requiring advanced technical skills.
+  </p>
+
+  <!-- Paragraph 9 -->
+  <p>
+    By using DSTLP, users can maintain consistency across documents
+    and reports, which strengthens professional image
+    and improves communication quality.
+  </p>
+
+  <!-- Paragraph 10 -->
+  <p>
+    DSTLP is continuously evolving to include more templates,
+    better designs, and advanced layouts.
+    Our goal is to become a reliable digital studio
+    for professional documentation worldwide.
+  </p>
+
 </div>
 
+<!-- =======================================================
+     FOOTER
+     ======================================================= -->
 <footer>
   © 2025 DSTLP.com | Support:
   <a href="mailto:Support@dstlp.com" style="color:#93c5fd;">Support@dstlp.com</a>
 </footer>
+
+<!-- =======================================================
+     BACKGROUND IMAGE SLIDER SCRIPT
+     ======================================================= -->
+<script>
+/* Image slider for hero section */
+const images = [
+  "Resume 1.jpg",
+  "Resume 2.jpg",
+  "Excel 1.jpg",
+  "power bi desh board.png"
+];
+
+let index = 0;
+const hero = document.getElementById("heroSlider");
+
+function changeHero(){
+  hero.style.backgroundImage = "url('" + images[index] + "')";
+  index = (index + 1) % images.length;
+}
+
+/* Initial load */
+changeHero();
+
+/* Change every 4 seconds */
+setInterval(changeHero, 4000);
+</script>
 
 </body>
 </html>
