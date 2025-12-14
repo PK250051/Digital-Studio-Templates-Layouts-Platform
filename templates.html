@@ -1,167 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Templates | DSTLP</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Templates | DSTLP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      color: #1f2937;
-      background: #ffffff;
-      line-height: 1.6;
-    }
+<style>
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#1f2937;
+  background:#ffffff;
+  line-height:1.6;
+}
+a{text-decoration:none}
 
-    a { text-decoration: none; }
+/* NAVBAR */
+.navbar{
+  background:#0f172a;
+  padding:16px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.navbar strong{color:#fff;font-size:20px}
+.navbar a{color:#e5e7eb;margin-left:20px;font-size:14px}
+.navbar a:hover{color:#fff}
 
-    /* ===== NAVBAR ===== */
-    .navbar {
-      background: linear-gradient(180deg, #0b1325, #0f172a);
-      padding: 16px 40px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
+/* HEADER */
+.header{
+  background:linear-gradient(180deg,#1e293b,#020617);
+  color:#fff;
+  padding:80px 20px;
+  text-align:center;
+}
+.header p{color:#cbd5f5}
 
-    .navbar strong {
-      color: white;
-      font-size: 20px;
-      letter-spacing: 1px;
-    }
+/* SECTIONS */
+.section{padding:70px 20px}
+.bg1{background:#f8fafc}
+.bg2{background:#eef2ff}
+.bg3{background:#fff7ed}
+.bg4{background:#ecfeff}
 
-    .navbar a {
-      color: #e5e7eb;
-      margin-left: 22px;
-      font-size: 15px;
-    }
+.container{max-width:1200px;margin:auto}
 
-    .navbar a:hover {
-      color: #ffffff;
-      border-bottom: 2px solid #2563eb;
-      padding-bottom: 3px;
-    }
+.section-title{text-align:center;margin-bottom:50px}
+.section-title p{max-width:900px;margin:auto;color:#475569}
 
-    /* ===== PAGE HEADER ===== */
-    .page-header {
-      background: radial-gradient(circle at top, #1e293b, #020617);
-      color: white;
-      padding: 90px 20px;
-      text-align: center;
-    }
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+.card{
+  background:#fff;
+  border:1px solid #e5e7eb;
+  border-radius:8px;
+  padding:24px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.05);
+}
+.card h3{margin-top:0;font-size:17px}
+.card p{font-size:14px;color:#475569}
+.download{
+  margin-top:14px;
+  text-align:center;
+  border-top:1px solid #e5e7eb;
+  padding-top:12px;
+}
+.download a{
+  background:#2563eb;
+  color:#fff;
+  padding:8px 18px;
+  border-radius:5px;
+  font-size:14px;
+}
 
-    .page-header h1 {
-      font-size: 36px;
-      margin-bottom: 12px;
-    }
+/* FOOTER */
+footer{
+  background:#020617;
+  color:#94a3b8;
+  text-align:center;
+  padding:25px;
+  font-size:14px;
+}
 
-    .page-header p {
-      color: #cbd5f5;
-      font-size: 16px;
-    }
-
-    /* ===== SECTIONS ===== */
-    .section {
-      padding: 80px 20px;
-    }
-
-    .bg-resume { background: #f8fafc; }
-    .bg-excel { background: #eef2ff; }
-    .bg-ppt { background: #fff7ed; }
-    .bg-powerbi { background: #ecfeff; }
-
-    .container {
-      max-width: 1300px;
-      margin: auto;
-    }
-
-    .section-header {
-      text-align: center;
-      margin-bottom: 60px;
-    }
-
-    .section-header h2 {
-      font-size: 30px;
-      margin-bottom: 10px;
-    }
-
-    .section-header p {
-      max-width: 800px;
-      margin: auto;
-      color: #475569;
-    }
-
-    /* ===== GRID ===== */
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 10px;
-      border: 1px solid #e5e7eb;
-      padding: 28px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      font-size: 18px;
-    }
-
-    .card p {
-      font-size: 14px;
-      color: #475569;
-      margin-bottom: 22px;
-    }
-
-    .download-box {
-      border-top: 1px solid #e5e7eb;
-      padding-top: 16px;
-      text-align: center;
-    }
-
-    .download-box a {
-      background: #2563eb;
-      color: white;
-      padding: 11px 24px;
-      border-radius: 6px;
-      font-size: 14px;
-      display: inline-block;
-    }
-
-    .download-box a:hover {
-      background: #1d4ed8;
-    }
-
-    footer {
-      background: #020617;
-      color: #94a3b8;
-      text-align: center;
-      padding: 30px;
-      font-size: 14px;
-    }
-
-    @media (max-width: 900px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+@media(max-width:900px){
+  .grid{grid-template-columns:1fr}
+}
+</style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
+<!-- NAV -->
 <div class="navbar">
   <strong>DSTLP</strong>
   <div>
@@ -174,136 +107,134 @@
 </div>
 
 <!-- HEADER -->
-<div class="page-header">
+<div class="header">
   <h1>Professional Templates Library</h1>
-  <p>High-quality Resume, Excel, PowerPoint & Power BI templates for real-world use</p>
+  <p>
+    High-quality Resume, Excel, PowerPoint, and Power BI templates.<br>
+    Designed for real-world business, reporting, and career use.<br>
+    Clean structure, practical layouts, and professional presentation.
+  </p>
 </div>
 
 <!-- ================= RESUME ================= -->
-<section class="section bg-resume">
-  <div class="container">
-    <div class="section-header">
-      <h2>Resume Templates</h2>
-      <p>Professionally structured resumes for freshers, experienced professionals,
-         technical roles, and leadership positions.</p>
-    </div>
+<section class="section bg1">
+<div class="container">
+<div class="section-title">
+<h2>Resume Templates</h2>
+<p>
+These resume templates follow modern hiring standards and ATS-friendly formats.
+They are suitable for freshers, experienced professionals, and leadership roles.
+Each template focuses on clarity, readability, and professional presentation.
+</p>
+</div>
 
-    <div class="grid">
-      <div class="card">
-        <h3>Modern Professional Resume</h3>
-        <p>Clean corporate resume layout highlighting skills, experience and achievements.
-           Fully ATS-friendly and easy to customize.</p>
-        <div class="download-box"><a href="#">Download</a></div>
-      </div>
-
-      <div class="card">
-        <h3>Executive Resume</h3>
-        <p>Designed for senior leadership roles with emphasis on strategy, impact and career growth.</p>
-        <div class="download-box"><a href="#">Download</a></div>
-      </div>
-
-      <div class="card">
-        <h3>Fresher Resume</h3>
-        <p>Ideal for students and entry-level candidates focusing on education, skills and projects.</p>
-        <div class="download-box"><a href="#">Download</a></div>
-      </div>
-    </div>
-  </div>
+<div class="grid">
+<div class="card"><h3>Modern Resume</h3><p>Clean layout highlighting skills and experience. Suitable for corporate roles.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Executive Resume</h3><p>Focused on leadership achievements and impact. Designed for senior roles.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Fresher Resume</h3><p>Structured for students and beginners. Highlights education and skills.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>IT Resume</h3><p>Designed for technical professionals. Emphasizes skills and projects.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Manager Resume</h3><p>Highlights leadership experience clearly. Suitable for management roles.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Finance Resume</h3><p>Focused on finance and accounting expertise. Professional and structured.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>HR Resume</h3><p>Designed for HR professionals. Emphasizes people management skills.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Sales Resume</h3><p>Highlights targets and achievements. Suitable for sales professionals.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Marketing Resume</h3><p>Focused on branding and campaign experience. Clean modern layout.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Creative Resume</h3><p>Balanced visual layout. Suitable for creative professionals.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Technical Lead Resume</h3><p>Highlights architecture and leadership skills. Designed for senior engineers.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Simple Resume</h3><p>Minimal universal format. Works for most job profiles.</p><div class="download"><a href="#">Download</a></div></div>
+</div>
+</div>
 </section>
 
 <!-- ================= EXCEL ================= -->
-<section class="section bg-excel">
-  <div class="container">
-    <div class="section-header">
-      <h2>Excel Templates</h2>
-      <p>Excel templates for finance, HR, operations and business tracking with built-in automation.</p>
-    </div>
+<section class="section bg2">
+<div class="container">
+<div class="section-title">
+<h2>Excel Templates</h2>
+<p>
+Excel templates designed for finance, HR, operations, and reporting needs.
+Each template includes structured formulas and automated calculations.
+Ideal for personal, professional, and business use.
+</p>
+</div>
 
-    <div class="grid">
-      <div class="card">
-        <h3>Monthly Budget Planner</h3>
-        <p>Plan and track income and expenses with automatic calculations and balance summary.</p>
-        <div class="download-box"><a href="#">Download</a></div>
-      </div>
-
-      <div class="card">
-        <h3>Expense Tracker</h3>
-        <p>Track daily and monthly expenses by category for better financial control.</p>
-        <div class="download-box"><a href="#">Download</a></div>
-      </div>
-
-      <div class="card">
-        <h3>Profit & Loss Statement</h3>
-        <p>Analyze revenue, cost and profit for monthly or yearly business performance.</p>
-        <div class="download-box"><a href="#">Download</a></div>
-      </div>
-    </div>
-  </div>
+<div class="grid">
+<div class="card"><h3>Budget Planner</h3><p>Tracks income and expenses automatically. Helps manage monthly budgets.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Expense Tracker</h3><p>Records daily expenses clearly. Useful for cost control.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Profit & Loss</h3><p>Calculates business profitability. Suitable for performance review.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Invoice Generator</h3><p>Creates professional invoices quickly. Reduces manual effort.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Salary Sheet</h3><p>Manages payroll calculations accurately. Useful for HR teams.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Attendance Tracker</h3><p>Tracks employee attendance efficiently. Supports HR management.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Inventory Sheet</h3><p>Controls stock movement clearly. Useful for small businesses.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Project Tracker</h3><p>Monitors project progress. Helps meet deadlines.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Sales Tracker</h3><p>Tracks sales performance. Supports business growth.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Cash Flow</h3><p>Tracks cash inflow and outflow. Improves planning accuracy.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>KPI Dashboard</h3><p>Visualizes key performance metrics. Useful for management reviews.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Expense Summary</h3><p>Summarizes expenses quickly. Supports better decisions.</p><div class="download"><a href="#">Download</a></div></div>
+</div>
+</div>
 </section>
 
 <!-- ================= PPT ================= -->
-<section class="section bg-ppt">
-  <div class="container">
-    <div class="section-header">
-      <h2>PowerPoint Templates</h2>
-      <p>Corporate presentation templates for meetings, proposals and training sessions.</p>
-    </div>
+<section class="section bg3">
+<div class="container">
+<div class="section-title">
+<h2>PowerPoint Templates</h2>
+<p>
+PowerPoint templates designed for professional presentations and meetings.
+They support storytelling, clarity, and audience engagement.
+Suitable for business, training, and executive communication.
+</p>
+</div>
 
-    <div class="grid">
-      <div class="card">
-        <h3>Business Presentation</h3>
-        <p>Clean corporate slides suitable for meetings and management reviews.</p>
-        <div class="download-box"><a href="#">Download</a></div>
-      </div>
-
-      <div class="card">
-        <h3>Pitch Deck</h3>
-        <p>Startup and investor-ready presentation with structured storytelling.</p>
-        <div class="download-box"><a href="#">Download</a></div>
-      </div>
-
-      <div class="card">
-        <h3>Company Profile</h3>
-        <p>Professional company overview slides for clients and partners.</p>
-        <div class="download-box"><a href="#">Download</a></div>
-      </div>
-    </div>
-  </div>
+<div class="grid">
+<div class="card"><h3>Business Presentation</h3><p>Corporate slides for meetings and reviews. Clean professional design.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Pitch Deck</h3><p>Investor-ready presentation structure. Suitable for startups.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Company Profile</h3><p>Professional company introduction slides. Suitable for clients.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Marketing Deck</h3><p>Designed for marketing campaigns. Clear visual storytelling.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Training Slides</h3><p>Suitable for internal training sessions. Easy to customize.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Project Proposal</h3><p>Client-ready proposal slides. Professional structure.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Strategy Deck</h3><p>Supports business planning discussions. Executive-friendly layout.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Financial Slides</h3><p>Finance-focused charts and visuals. Useful for reviews.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Product Launch</h3><p>Showcases product features clearly. Suitable for launch events.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Sales Deck</h3><p>Supports sales pitches effectively. Clean design.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Annual Report</h3><p>Summarizes yearly performance. Suitable for stakeholders.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Client Presentation</h3><p>Professional client-facing slides. Easy branding.</p><div class="download"><a href="#">Download</a></div></div>
+</div>
+</div>
 </section>
 
 <!-- ================= POWER BI ================= -->
-<section class="section bg-powerbi">
-  <div class="container">
-    <div class="section-header">
-      <h2>Power BI Templates</h2>
-      <p>Ready-to-use Power BI dashboards for reporting, analytics and performance monitoring.</p>
-    </div>
+<section class="section bg4">
+<div class="container">
+<div class="section-title">
+<h2>Power BI Templates</h2>
+<p>
+Power BI dashboards designed for analytics and decision-making.
+They help visualize complex data clearly and efficiently.
+Suitable for management, finance, sales, and operations teams.
+</p>
+</div>
 
-    <div class="grid">
-      <div class="card">
-        <h3>Sales Dashboard</h3>
-        <p>Visualize sales trends, targets and performance metrics clearly.</p>
-        <div class="download-box"><a href="#">Download</a></div>
-      </div>
-
-      <div class="card">
-        <h3>Finance Dashboard</h3>
-        <p>Track financial KPIs, revenue and expense insights.</p>
-        <div class="download-box"><a href="#">Download</a></div>
-      </div>
-
-      <div class="card">
-        <h3>HR Dashboard</h3>
-        <p>Analyze workforce data and HR metrics efficiently.</p>
-        <div class="download-box"><a href="#">Download</a></div>
-      </div>
-    </div>
-  </div>
+<div class="grid">
+<div class="card"><h3>Sales Dashboard</h3><p>Tracks sales trends and KPIs. Supports data-driven decisions.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Finance Dashboard</h3><p>Displays financial metrics clearly. Useful for leadership reviews.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>HR Dashboard</h3><p>Analyzes workforce data effectively. Improves HR planning.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Operations Dashboard</h3><p>Monitors operational performance. Improves efficiency.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Inventory Dashboard</h3><p>Tracks inventory levels visually. Supports stock control.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Executive Dashboard</h3><p>High-level performance overview. Designed for leadership teams.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Marketing Dashboard</h3><p>Analyzes campaign performance. Supports strategy decisions.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Customer Analytics</h3><p>Tracks customer behavior patterns. Supports retention planning.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Financial Forecast</h3><p>Visualizes future trends. Useful for planning.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Project Analytics</h3><p>Tracks project KPIs visually. Improves control.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Sales Forecast</h3><p>Predicts sales patterns. Supports planning.</p><div class="download"><a href="#">Download</a></div></div>
+<div class="card"><h3>Performance Dashboard</h3><p>Tracks organizational KPIs. Supports strategy.</p><div class="download"><a href="#">Download</a></div></div>
+</div>
+</div>
 </section>
 
 <footer>
-  © 2025 DSTLP.com | Support:
-  <a href="mailto:Support@dstlp.com" style="color:#93c5fd;">Support@dstlp.com</a>
+© 2025 DSTLP.com | Support:
+<a href="mailto:Support@dstlp.com" style="color:#93c5fd">Support@dstlp.com</a>
 </footer>
 
 </body>
