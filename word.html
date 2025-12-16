@@ -1,38 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Word Templates | DSTLP</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Word Templates | DSTLP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+/* *** ATTENTION ***
+    If you are keeping your CSS in a single file per page, PASTE THE ENTIRE <style> BLOCK
+    from your excel.html file here to maintain the professional look and responsiveness.
+*/
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#1f2937;
+  background:#f8fafc;
+  line-height:1.6;
+}
+a{text-decoration:none}
 
-  <style>
-    body{margin:0;font-family:Arial;}
-    .navbar{background:#0f172a;padding:16px 40px;}
-    .navbar a{color:#e5e7eb;margin-left:20px;}
-    .header{background:#1e293b;color:white;padding:50px;text-align:center;}
-    .section{padding:40px;}
-  </style>
+/* NAVBAR */
+.navbar{
+  background:#0f172a;
+  padding:16px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.navbar strong{color:#fff;font-size:20px}
+.navbar a{color:#e5e7eb;margin-left:20px;font-size:14px}
+.navbar a:hover{color:#fff}
+
+/* HEADER */
+.header{
+  background:linear-gradient(180deg,#1e293b,#020617);
+  color:#fff;
+  padding:70px 20px;
+  text-align:center;
+}
+.header p{color:#cbd5f5}
+
+/* PAGE LAYOUT */
+.page{
+  display:grid;
+  grid-template-columns:280px 1fr;
+  gap:30px;
+  max-width:1400px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+/* SIDEBAR */
+.sidebar{
+  background:#ffffff;
+  border:1px solid #e5e7eb;
+  border-radius:8px;
+  padding:25px;
+  height:fit-content;
+}
+.sidebar h3{
+  margin-top:0;
+  font-size:18px;
+  border-bottom:2px solid #2563eb;
+  padding-bottom:8px;
+}
+.sidebar ul{
+  list-style:none;
+  padding:0;
+  margin:15px 0 0;
+}
+.sidebar li{
+  margin-bottom:10px;
+  font-size:14px;
+  color:#334155;
+}
+
+/* MAIN CONTENT */
+.content h2{
+  margin-top:0;
+  font-size:26px;
+}
+.content p{
+  max-width:900px;
+  color:#475569;
+  margin-bottom:35px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+.card{
+  background:#ffffff;
+  border:1px solid #e5e7eb;
+  border-radius:8px;
+  padding:24px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.05);
+}
+.card h3{
+  margin-top:0;
+  font-size:17px;
+}
+.card p{
+  font-size:14px;
+  color:#475569;
+}
+.download{
+  margin-top:14px;
+  text-align:center;
+  border-top:1px solid #e5e7eb;
+  padding-top:12px;
+}
+.download a{
+  background:#2563eb;
+  color:#fff;
+  padding:8px 18px;
+  border-radius:5px;
+  font-size:14px;
+}
+
+/* FOOTER */
+footer{
+  background:#020617;
+  color:#94a3b8;
+  text-align:center;
+  padding:25px;
+  font-size:14px;
+  margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+  .page{grid-template-columns:1fr}
+}
+</style>
 </head>
 
 <body>
 
 <div class="navbar">
-  <strong style="color:white;">DSTLP</strong>
-  <a href="index.html">Home</a>
-  <a href="templates.html">Templates</a>
-  <a href="excel.html">Excel</a>
-  <a href="word.html">Word</a>
-  <a href="contact.html">Contact</a>
+  <strong>DSTLP</strong>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="templates.html">Templates</a>
+    <a href="excel.html">Excel</a>
+    <a href="word.html">Word</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </div>
 
 <div class="header">
-  <h1>Word Templates</h1>
-  <p>Resumes, invoices, letters and reports</p>
+  <h1>Word Document Templates</h1>
+  <p>
+    Professionally structured Microsoft Word templates for resumes, official letters, invoices, and comprehensive business reports.
+  </p>
 </div>
 
-<div class="section">
-  <p>Word templates will be available here soon.</p>
+<div class="page">
+
+  <aside class="sidebar">
+    <h3>Document Types</h3>
+    <ul>
+      <li>ATS Resume (Modern)</li>
+      <li>ATS Resume (Classic)</li>
+      <li>Infographic Resume</li>
+      <li>Cover Letter Set</li>
+      <li>Invoice Template</li>
+      <li>Business Proposal</li>
+      <li>Formal Letterhead</li>
+      <li>Meeting Minutes</li>
+      <li>Contract Agreement</li>
+      <li>Certificate of Award</li>
+      <li>Project Report</li>
+      <li>Thesis/Dissertation</li>
+      <li>Newsletter Design</li>
+      <li>Employee Handbook</li>
+      <li>Press Release</li>
+    </ul>
+  </aside>
+
+  <main class="content">
+    <h2>Resumes & Business Documentation</h2>
+    <p>
+      Our Word templates are designed for formatting consistency and professional appearance, ensuring your documents, particularly resumes, are easily readable by both human recruiters and Applicant Tracking Systems (ATS).
+    </p>
+
+    <div class="grid">
+
+      <div class="card"><h3>ATS Resumes</h3><p>Optimized for Applicant Tracking Systems. Clean, structural, and keyword-friendly layouts.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>Corporate Letters</h3><p>Formal letterheads, official correspondence, and professionally structured legal documents.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>Invoices & Billing</h3><p>Templates for clean, compliant, and easy-to-use invoices, receipts, and billing statements.</p><div class="download"><a href="#">View Templates</a></div></div>
+
+      <div class="card"><h3>Report Writing</h3><p>Templates for comprehensive project reports, academic papers, and detailed business analysis.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>HR Documentation</h3><p>Offer letters, employee manual layouts, and internal communication memos.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>Proposal & Pitch</h3><p>Structured templates for winning business proposals and client pitch documents.</p><div class="download"><a href="#">View Templates</a></div></div>
+
+      <div class="card"><h3>Certificates</h3><p>Professional certificate designs for awards, training completion, and achievements.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>Infographic Style</h3><p>Visually rich resume and report templates using clean graphic elements and data bars.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>Legal Agreements</h3><p>Simple contracts, NDAs, and basic legal document frameworks.</p><div class="download"><a href="#">View Templates</a></div></div>
+
+    </div>
+  </main>
+
 </div>
+
+<footer>
+© 2025 DSTLP.com | Support:
+<a href="mailto:Support@dstlp.com" style="color:#93c5fd">Support@dstlp.com</a>
+</footer>
 
 </body>
 </html>
