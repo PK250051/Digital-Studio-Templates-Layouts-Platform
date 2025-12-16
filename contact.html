@@ -6,36 +6,168 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body{margin:0;font-family:Arial;}
-    .navbar{background:#0f172a;padding:16px 40px;}
-    .navbar a{color:#e5e7eb;margin-left:20px;}
-    .header{background:#1e293b;color:white;padding:50px;text-align:center;}
-    .section{padding:40px;}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f8fafc;
+      color: #1f2937;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      background: #0f172a;
+      padding: 16px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .navbar strong {
+      color: white;
+      font-size: 18px;
+      letter-spacing: 1px;
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .menu a {
+      color: #e5e7eb;
+      margin-left: 22px;
+      text-decoration: none;
+      font-size: 15px;
+    }
+
+    .menu a:hover {
+      color: #ffffff;
+    }
+
+    /* HEADER */
+    .header {
+      background: linear-gradient(135deg, #020617, #1e293b);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    }
+
+    label {
+      display: block;
+      margin-top: 18px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1px solid #cbd5f5;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      margin-top: 25px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 14px 30px;
+      font-size: 15px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #1d4ed8;
+    }
+
+    .note {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #475569;
+    }
+
+    footer {
+      background: #020617;
+      color: #94a3b8;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar">
-  <strong style="color:white;">DSTLP</strong>
-  <a href="index.html">Home</a>
-  <a href="templates.html">Templates</a>
-  <a href="excel.html">Excel</a>
-  <a href="word.html">Word</a>
-  <a href="contact.html">Contact</a>
+  <strong>DSTLP</strong>
+
+  <div class="menu">
+    <a href="/">Home</a>
+    <a href="templates.html">Templates</a>
+    <a href="excel.html">Excel</a>
+    <a href="word.html">Word</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </div>
 
+<!-- HEADER -->
 <div class="header">
   <h1>Contact Support</h1>
-  <p>We are here to help you</p>
+  <p>Have a question or requirement? Send us a message.</p>
 </div>
 
-<div class="section">
-  <p>Email support:</p>
-  <p>
-    <a href="mailto:Support@dstlp.com">Support@dstlp.com</a>
-  </p>
+<!-- FORM -->
+<div class="container">
+  <form action="https://formspree.io/f/xxxxabcd" method="POST">
+    
+    <label for="name">Full Name *</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="phone">Contact Number *</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="email">Email Address *</label>
+    <input type="email" id="email" name="_replyto" required>
+
+    <label for="message">Requirement / Message *</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Submit Request</button>
+
+    <p class="note">
+      Your information is kept confidential. Our team will contact you shortly.
+    </p>
+
+  </form>
 </div>
+
+<footer>
+  © 2025 DSTLP.com | Support: 
+  <a href="mailto:Support@dstlp.com" style="color:#93c5fd;">Support@dstlp.com</a>
+</footer>
 
 </body>
 </html>
