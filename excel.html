@@ -1,38 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Excel Templates | DSTLP</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Excel Templates | DSTLP</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    body{margin:0;font-family:Arial;}
-    .navbar{background:#0f172a;padding:16px 40px;}
-    .navbar a{color:#e5e7eb;margin-left:20px;}
-    .header{background:#1e293b;color:white;padding:50px;text-align:center;}
-    .section{padding:40px;}
-  </style>
+<style>
+body{
+  margin:0;
+  font-family:Arial, Helvetica, sans-serif;
+  color:#1f2937;
+  background:#f8fafc;
+  line-height:1.6;
+}
+a{text-decoration:none}
+
+/* NAVBAR */
+.navbar{
+  background:#0f172a;
+  padding:16px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.navbar strong{color:#fff;font-size:20px}
+.navbar a{color:#e5e7eb;margin-left:20px;font-size:14px}
+.navbar a:hover{color:#fff}
+
+/* HEADER */
+.header{
+  background:linear-gradient(180deg,#1e293b,#020617);
+  color:#fff;
+  padding:70px 20px;
+  text-align:center;
+}
+.header p{color:#cbd5f5}
+
+/* PAGE LAYOUT */
+.page{
+  display:grid;
+  grid-template-columns:280px 1fr;
+  gap:30px;
+  max-width:1400px;
+  margin:auto;
+  padding:50px 20px;
+}
+
+/* SIDEBAR */
+.sidebar{
+  background:#ffffff;
+  border:1px solid #e5e7eb;
+  border-radius:8px;
+  padding:25px;
+  height:fit-content;
+}
+.sidebar h3{
+  margin-top:0;
+  font-size:18px;
+  border-bottom:2px solid #2563eb;
+  padding-bottom:8px;
+}
+.sidebar ul{
+  list-style:none;
+  padding:0;
+  margin:15px 0 0;
+}
+.sidebar li{
+  margin-bottom:10px;
+  font-size:14px;
+  color:#334155;
+}
+
+/* MAIN CONTENT */
+.content h2{
+  margin-top:0;
+  font-size:26px;
+}
+.content p{
+  max-width:900px;
+  color:#475569;
+  margin-bottom:35px;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+.card{
+  background:#ffffff;
+  border:1px solid #e5e7eb;
+  border-radius:8px;
+  padding:24px;
+  box-shadow:0 6px 15px rgba(0,0,0,0.05);
+}
+.card h3{
+  margin-top:0;
+  font-size:17px;
+}
+.card p{
+  font-size:14px;
+  color:#475569;
+}
+.download{
+  margin-top:14px;
+  text-align:center;
+  border-top:1px solid #e5e7eb;
+  padding-top:12px;
+}
+.download a{
+  background:#2563eb;
+  color:#fff;
+  padding:8px 18px;
+  border-radius:5px;
+  font-size:14px;
+}
+
+/* FOOTER */
+footer{
+  background:#020617;
+  color:#94a3b8;
+  text-align:center;
+  padding:25px;
+  font-size:14px;
+  margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:1000px){
+  .page{grid-template-columns:1fr}
+}
+</style>
 </head>
 
 <body>
 
+<!-- NAV -->
 <div class="navbar">
-  <strong style="color:white;">DSTLP</strong>
-  <a href="index.html">Home</a>
-  <a href="templates.html">Templates</a>
-  <a href="excel.html">Excel</a>
-  <a href="word.html">Word</a>
-  <a href="contact.html">Contact</a>
+  <strong>DSTLP</strong>
+  <div>
+    <a href="/">Home</a>
+    <a href="templates.html">Templates</a>
+    <a href="excel.html">Excel</a>
+    <a href="word.html">Word</a>
+    <a href="contact.html">Contact</a>
+  </div>
 </div>
 
+<!-- HEADER -->
 <div class="header">
   <h1>Excel Templates</h1>
-  <p>Business, finance, HR and dashboard templates</p>
+  <p>
+    Professionally designed Excel templates for business, finance, education,
+    logistics, stock tracking, and operational management.
+  </p>
 </div>
 
-<div class="section">
-  <p>Excel templates will be added here soon.</p>
+<!-- PAGE BODY -->
+<div class="page">
+
+  <!-- LEFT SIDEBAR -->
+  <aside class="sidebar">
+    <h3>Excel Template List</h3>
+    <ul>
+      <li>Budget Planner</li>
+      <li>Expense Tracker</li>
+      <li>Profit & Loss</li>
+      <li>Invoice Generator</li>
+      <li>Salary Sheet</li>
+      <li>Attendance Tracker</li>
+      <li>Inventory Management</li>
+      <li>Stock Portfolio</li>
+      <li>School Fee Register</li>
+      <li>Student Attendance</li>
+      <li>Logistics Tracker</li>
+      <li>Delivery Schedule</li>
+      <li>Sales Tracker</li>
+      <li>CRM Sheet</li>
+      <li>Project Tracker</li>
+      <li>KPI Dashboard</li>
+      <li>Cash Flow Statement</li>
+      <li>Purchase Register</li>
+      <li>Vendor Management</li>
+      <li>HR Master Sheet</li>
+      <li>Leave Management</li>
+      <li>Recruitment Tracker</li>
+      <li>Production Planning</li>
+      <li>Quality Control Log</li>
+      <li>Maintenance Tracker</li>
+      <li>Marketing Budget</li>
+      <li>Campaign Tracker</li>
+      <li>Customer Database</li>
+      <li>Order Management</li>
+      <li>Financial Forecast</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+    <h2>Excel Template Categories</h2>
+    <p>
+      Each Excel template category is designed to solve real operational problems.
+      These templates include structured formulas, automation, and professional layouts
+      suitable for daily business and organizational use.
+    </p>
+
+    <div class="grid">
+
+      <div class="card"><h3>Finance</h3><p>Budgeting, expense tracking, profit analysis, and financial reporting templates.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>Stock & Investment</h3><p>Portfolio tracking, return analysis, and investment monitoring sheets.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>School Management</h3><p>Student attendance, fee records, and academic administration templates.</p><div class="download"><a href="#">View Templates</a></div></div>
+
+      <div class="card"><h3>HR & Payroll</h3><p>Employee records, salary calculations, leave and attendance tracking.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>Sales</h3><p>Sales performance tracking, targets, and revenue analysis.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>Logistics</h3><p>Delivery schedules, shipment tracking, and logistics planning.</p><div class="download"><a href="#">View Templates</a></div></div>
+
+      <div class="card"><h3>Inventory</h3><p>Stock movement control, reorder levels, and warehouse tracking.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>Projects</h3><p>Project timelines, task tracking, and progress monitoring.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>CRM</h3><p>Customer databases, follow-ups, and sales pipeline tracking.</p><div class="download"><a href="#">View Templates</a></div></div>
+
+      <div class="card"><h3>Manufacturing</h3><p>Production planning, quality logs, and process control.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>Marketing</h3><p>Campaign budgets, performance tracking, and ROI analysis.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>Administration</h3><p>Office operations, registers, and daily management sheets.</p><div class="download"><a href="#">View Templates</a></div></div>
+
+      <div class="card"><h3>Reporting</h3><p>Automated reports and summaries for management review.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>Dashboards</h3><p>KPI dashboards and visual performance tracking.</p><div class="download"><a href="#">View Templates</a></div></div>
+      <div class="card"><h3>Custom Business</h3><p>Flexible templates adaptable to specific business needs.</p><div class="download"><a href="#">View Templates</a></div></div>
+
+    </div>
+  </main>
+
 </div>
+
+<footer>
+© 2025 DSTLP.com | Support:
+<a href="mailto:Support@dstlp.com" style="color:#93c5fd">Support@dstlp.com</a>
+</footer>
 
 </body>
 </html>
