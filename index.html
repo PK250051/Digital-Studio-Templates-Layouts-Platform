@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DSTLP | Design Studio & Template Library </title>
+  <title>DSTLP | Design Studio & Template Library</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta name="description"
-        content="DSTLP provides ready-made Excel and Word templates including resumes, dashboards, invoices, HR and business documents.">
+        content="DSTLP – Design Studio & Template Library provides professionally designed resume, Excel, Word, dashboard, and business templates for real-world use.">
 
   <style>
     body {
@@ -49,7 +49,7 @@
       padding-bottom: 3px;
     }
 
-    /* ===== HEADER (SMALL, FULL IMAGE) ===== */
+    /* ===== HEADER ===== */
     .header {
       position: relative;
       height: 380px;
@@ -60,7 +60,6 @@
       text-align: center;
       color: white;
       overflow: hidden;
-
       background-position: center top;
       background-repeat: no-repeat;
       background-size: contain;
@@ -118,7 +117,6 @@
       padding: 70px 20px;
     }
 
-    /* ===== CONTENT BLOCKS ===== */
     .content-block {
       display: flex;
       gap: 30px;
@@ -157,7 +155,6 @@
       }
     }
 
-    /* ===== FOOTER ===== */
     footer {
       background: #0f172a;
       color: #cbd5f5;
@@ -187,8 +184,8 @@
   <div class="header-content">
     <h1>DSTLP</h1>
     <p>
-      Digital Studio Templates & Layouts Platform<br>
-      Ready-made Excel & Word templates for resumes, dashboards and business use
+      Design Studio & Template Library<br>
+      Ready-made templates for resumes, Excel, Word, dashboards and business use
     </p>
     <a href="templates.html" class="btn-primary">Browse Templates</a>
   </div>
@@ -198,52 +195,52 @@
 <section class="section">
 
   <div class="content-block">
-    <img src="Resume%201.jpg" alt="Resume Template">
+    <img src="Resume%201.jpg" alt="Resume Templates">
     <div class="content-text">
       <h3>Professionally Designed Resume Templates</h3>
-      <p>DSTLP offers resume templates created according to modern hiring standards.</p>
-      <p>Each design highlights skills, experience and achievements clearly.</p>
-      <p>Suitable for freshers, experienced professionals and leadership roles.</p>
+      <p>DSTLP provides resume templates aligned with modern hiring and ATS standards.</p>
+      <p>Each resume focuses on clarity, skills, experience, and measurable achievements.</p>
+      <p>Suitable for freshers, professionals, and senior leadership roles.</p>
     </div>
   </div>
 
   <div class="content-block">
     <div class="content-text">
       <h3>Excel Templates for Business & Productivity</h3>
-      <p>Our Excel templates help manage finance, HR, inventory and projects.</p>
-      <p>They are structured to reduce manual work and calculation errors.</p>
-      <p>Useful for individuals, startups and established businesses.</p>
+      <p>Excel templates help manage finance, HR, inventory, logistics, and projects.</p>
+      <p>Built with structured formulas to reduce errors and save time.</p>
+      <p>Designed for individuals, startups, and enterprises.</p>
     </div>
-    <img src="Excel%201.jpg" alt="Excel Template">
+    <img src="Excel%201.jpg" alt="Excel Templates">
   </div>
 
   <div class="content-block">
-    <img src="power%20bi%20desh%20board.png" alt="Dashboard Template">
+    <img src="power%20bi%20desh%20board.png" alt="Dashboard Templates">
     <div class="content-text">
       <h3>Dashboards & Reporting Formats</h3>
-      <p>Visual dashboards support faster and more accurate decision-making.</p>
-      <p>DSTLP dashboards are inspired by professional Power BI layouts.</p>
-      <p>Ideal for management reviews and performance tracking.</p>
+      <p>Professional dashboards improve visibility and decision-making.</p>
+      <p>Inspired by Power BI and management reporting standards.</p>
+      <p>Ideal for performance tracking and executive reviews.</p>
     </div>
   </div>
 
   <div class="content-block">
     <div class="content-text">
-      <h3>Word Templates for Daily Professional Use</h3>
-      <p>Word templates include resumes, invoices, letters and reports.</p>
+      <h3>Word Templates for Professional Documentation</h3>
+      <p>Word templates include resumes, invoices, letters, and reports.</p>
       <p>All formats follow standard business documentation practices.</p>
-      <p>No formatting effort is required—just edit and use.</p>
+      <p>Edit and use instantly without formatting effort.</p>
     </div>
-    <img src="Resume%202.jpg" alt="Word Template">
+    <img src="Resume%202.jpg" alt="Word Templates">
   </div>
 
   <div class="content-block">
     <img src="Resume%201.jpg" alt="Ready Made Templates">
     <div class="content-text">
       <h3>Ready-to-Use, Time-Saving Templates</h3>
-      <p>Every DSTLP template is designed for immediate use.</p>
-      <p>No learning curve and no complex setup is required.</p>
-      <p>Focus on your work, not document formatting.</p>
+      <p>Every DSTLP template is designed for immediate practical use.</p>
+      <p>No learning curve or complex setup is required.</p>
+      <p>Focus on results, not document formatting.</p>
     </div>
   </div>
 
@@ -251,7 +248,7 @@
 
 <!-- FOOTER -->
 <footer>
-  © 2025 DSTLP.com — Digital Studio Templates & Layouts Platform <br>
+  © 2025 DSTLP.com — Design Studio & Template Library<br>
   Contact Support:
   <a href="mailto:Support@dstlp.com" style="color:#93c5fd;">Support@dstlp.com</a>
 </footer>
@@ -264,15 +261,12 @@
     "Excel%201.jpg",
     "power%20bi%20desh%20board.png"
   ];
-
   let i = 0;
   const header = document.getElementById("headerSlider");
-
   function changeBg() {
     header.style.backgroundImage = `url('${images[i]}')`;
     i = (i + 1) % images.length;
   }
-
   changeBg();
   setInterval(changeBg, 4000);
 </script>
